@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 Run the tests:
 ```bash
-pytest
+SERVICE_HOST=<your-host> pytest
 ```
 
 > [!IMPORTANT]
