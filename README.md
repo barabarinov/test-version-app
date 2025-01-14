@@ -21,18 +21,18 @@ git clone https://github.com/barabarinov/test-version-app.git
 
 Create and activate a virtual environment:
 ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 ```
 
 Install the dependencies:
 ```bash
-   pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Run the tests:
 ```bash
-   pytest
+pytest
 ```
 
 > [!IMPORTANT]
