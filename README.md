@@ -1,4 +1,4 @@
-# test-varsion-app
+# test-version-app
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Pytest](https://img.shields.io/badge/pytest-003E51?style=for-the-badge&logo=pytest&logoColor=white)
