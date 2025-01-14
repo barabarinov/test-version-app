@@ -5,13 +5,12 @@
 
 This project includes a set of test cases to ensure the correct functionality of a simple versioning API. The tests are written using pytest and cover various aspects of the API, including:
 
-- Obtaining Status of Version
-- Setting Initial Version
-- Minor Version Update
-- Major Version Update
-- Removing Version
-- Rollback to Previous Major Version or Specific Version
-
+- Getting status
+- Setting initial status version
+- Upgrade to major status version
+- Update minor status version
+- Rollback to previous major status version (or to specific version)
+- Deleting status version
 
 ## Quick Start
 Clone the repository:
@@ -36,5 +35,5 @@ pytest
 ```
 
 > [!IMPORTANT]
-> - From diagram I can not understand is this system supports changing version on the rollback to particular one. If it is not in the future it might be supported and we can test it.
+> - From diagram I couln't understand is this system supports changing version on the rollback to particular one or just to previous major version. In the tests I'm testing also changing to particular version (just in case).
 > 
