@@ -29,7 +29,12 @@ Install the dependencies:
 pip install -r requirements.txt
 ```
 
-Run the tests:
+To run the tests over `localhost:5000`:
+```bash
+pytest
+````
+
+To run test against different host:
 ```bash
 SERVICE_HOST=<your-host> pytest
 ```
@@ -38,11 +43,5 @@ SERVICE_HOST=<your-host> pytest
 > - From diagram I couln't understand is this system supports changing version on the rollback to particular one or just to previous major version. In the tests I'm testing also changing to particular version (just in case).
 > 
 
-## Mind Map
-- Load Testing (Stress Testing, Spike Testing, Endurance Testing)
-- Performance Testing(Response Time Testing, Throughput Testing)
-- Security Testing(Check permissions and roles, JWT Token, CSRF)
-- Compatibility Testing(API Versioning Testing)
-- Integration Testing
-- Failure Testing
-- Mock Testing
+## Mind map for future testing:
+![Mind map](pic/status_version_sytem_tesing_mind_map.png)
