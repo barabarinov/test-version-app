@@ -319,3 +319,28 @@ class TestEdgeCases:
         status_code, version = api_client.get_status()
         assert status_code == HTTPStatus.OK
         assert version == "1.2"
+
+    # Test invalid methods
+    def test_invalid_method_for_get_status(self, api_client):
+        response = api_client.custom_request("POST", "/status")
+        assert response.status_code == HTTPStatus.METHOD_NOT_ALLOWED
+
+    def test_invalid_method_for_set_status(self, api_client):
+        response = api_client.custom_request("PUT", "/setStatus")
+        assert response.status_code == HTTPStatus.METHOD_NOT_ALLOWED
+
+    def test_invalid_method_for_update_status(self, api_client):
+        response = api_client.custom_request("DELETE", "/updateStatus")
+        assert response.status_code == HTTPStatus.METHOD_NOT_ALLOWED
+
+    def test_invalid_method_for_rewrite_status(self, api_client):
+        response = api_client.custom_request("GET", "/rewriteStatus")
+        assert response.status_code == HTTPStatus.METHOD_NOT_ALLOWED
+
+    def test_invalid_method_for_remove_status(self, api_client):
+        response = api_client.custom_request("POST", "/removeStatus")
+        assert response.status_code == HTTPStatus.METHOD_NOT_ALLOWED
+
+    def test_invalid_method_for_rollback_status(self, api_client):
+        response = api_client.custom_request("GET", "/rollbackStatusVersion")
+        assert response.status_code == HTTPStatus.METHOD_NOT_ALLOWED
