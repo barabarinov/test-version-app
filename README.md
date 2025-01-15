@@ -37,3 +37,12 @@ SERVICE_HOST=<your-host> pytest
 > [!IMPORTANT]
 > - From diagram I couln't understand is this system supports changing version on the rollback to particular one or just to previous major version. In the tests I'm testing also changing to particular version (just in case).
 > 
+
+## Mind Map
+- Load Testing (Stress Testing, Spike Testing, Endurance Testing)
+- Performance Testing(Response Time Testing, Throughput Testing)
+- Security Testing(Check permissions and roles, JWT Token, CSRF)
+- Compatibility Testing(API Versioning Testing)
+- Integration Testing
+- Failure Testing
+- Mock Testing
