@@ -44,4 +44,4 @@ SERVICE_HOST=<your-host> pytest
 > 
 
 ## Mind map for future testing:
-![Mind map](pic/status_version_sytem_tesing_mind_map.png)
+![Mind map](pic/mind_map.jpg)
