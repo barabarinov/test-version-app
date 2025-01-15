@@ -8,12 +8,12 @@ from .client import StatusApiClient
 
 
 @pytest.fixture(scope="session")
-def api_url():
+def api_url() -> str:
     return os.getenv("SERVICE_HOST", "http://localhost:5000")
 
 
 @pytest.fixture(scope="session")
-def session():
+def session() -> requests.Session:
     session = requests.Session()
 
     yield session
@@ -22,12 +22,12 @@ def session():
 
 
 @pytest.fixture
-def api_client(session, api_url):
+def api_client(session, api_url) -> StatusApiClient:
     return StatusApiClient(session, api_url)
 
 
 @pytest.fixture
-def clean_state(api_client):
+def clean_state(api_client) -> None:
     """Clean version state before each test"""
     status_code = api_client.remove_status()
     assert status_code == HTTPStatus.OK
