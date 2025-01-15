@@ -12,6 +12,13 @@ class StatusApiClient:
         """Helper to construct full URL for API requests."""
         return f"{self.base_url.rstrip('/')}/{endpoint.lstrip('/')}"
 
+    def custom_request(self, method: str, endpoint: str, **kwargs) -> requests.Response:
+        """
+        It constructs the full URL for the endpoint and sends the specified HTTP request method.
+        """
+        url = self._make_url(endpoint)
+        return self.client.request(method, url, **kwargs)
+
     def get_status(self) -> tuple[int, str | None]:
         """Get current version status"""
         response = self.client.get(self._make_url("/status"))
