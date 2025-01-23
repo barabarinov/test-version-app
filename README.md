@@ -43,5 +43,8 @@ SERVICE_HOST=<your-host> pytest
 > - From diagram I couln't understand is this system supports changing version on the rollback to particular one or just to previous major version. In the tests I'm testing also changing to particular version (just in case).
 > 
 
+## Schema of the API:
+![Schema](pic/schema.pdf)
+
 ## Mind map for future testing:
 ![Mind map](pic/mind_map.jpg)
