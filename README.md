@@ -44,7 +44,7 @@ SERVICE_HOST=<your-host> pytest
 > 
 
 ## Schema of the API:
-![Schema](pic/schema.pdf)
+![Schema](pic/schema.png)
 
 ## Mind map for future testing:
 ![Mind map](pic/mind_map.jpg)
